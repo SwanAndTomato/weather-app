@@ -1,0 +1,65 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2; /* Light gray background */
+  position: relative;
+}
+
+body::before,
+.app::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.jpg'); /* Replace with your background image URL */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+  position:relative;
+}
+
+h1 {
+  color: #333; /* Dark gray heading color */
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #333; /* Dark gray label color */
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #3498db; /* Blue border */
+  background-color: #fff; /* White background */
+  color: #3498db; /* Blue text color */
+  border-radius: 5px;
+}
+
+.weather-list {
+  display: flex;
+  justify-content: center;
+}
+
+.error-message {
+  color: #ff0000; /* Red text color for error messages */
+  margin-top: 10px;
+}
+/* Add any additional styles as needed */
+
