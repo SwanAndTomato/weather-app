@@ -69,7 +69,6 @@ function App() {
           onKeyDown={handleKeyPress} // Handle key press
           placeholder="Enter city name"
         />
-        <button onClick={handleSearchSubmit}>Search</button>
         <button data-testid="search-button" onClick={handleSearchSubmit}>Search</button>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
