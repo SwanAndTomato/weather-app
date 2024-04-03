@@ -58,7 +58,7 @@ function App() {
   return (
     <div className="app">
       <h1>Weather App</h1>
-      <p2>Enter the name of the U.S city in the search box below to display current weather conditions for that location. </p2>
+      <h2>Enter the name of the U.S city in the search box below to display current weather conditions for that location. </h2>
       <div className="controls">
         <br></br>
         <label>Search City:</label>
@@ -70,6 +70,7 @@ function App() {
           placeholder="Enter city name"
         />
         <button onClick={handleSearchSubmit}>Search</button>
+        <button data-testid="search-button" onClick={handleSearchSubmit}>Search</button>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
       <div className="weather-list">
