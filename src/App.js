@@ -61,14 +61,18 @@ function App() {
       <h2>Enter the name of the U.S city in the search box below to display current weather conditions for that location. </h2>
       <div className="controls">
         <br></br>
-        <label>Search City:</label>
+        <label>Search City:
         <input
           type="text"
+          id="city-input" 
+          name="city" 
           value={searchInput}
           onChange={handleSearchInputChange}
-          onKeyDown={handleKeyPress} // Handle key press
+          onKeyDown={handleKeyPress} 
           placeholder="Enter city name"
-        />
+          />  
+          </label>      
+        
         <button data-testid="search-button" onClick={handleSearchSubmit}>Search</button>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
